@@ -52,9 +52,10 @@
 	align-items: flex-end;
 
 }
-.preview-price h3 {
+.preview-price h2 {
 	margin-bottom: 0;
 	padding-bottom: 0;
+	font-size: 28px;
 }
 .preview-status {
 	margin-top: -15px;
@@ -85,10 +86,42 @@
 
 /* -----------      product-details      ---------------*/
 
-.details-form {
+.product-overlay {
 	display: flex;
-	
+	border-bottom: 1px solid #eeeeee;
 }
 .select-box {
 	display: flex;
+	align-items: center;
+	padding-right: 40px;
+
+}
+.select-box select {
+	min-width: 90px;
+	border: 2px solid #eeeeee;
+	border-radius: 3px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-left: 15px;
+
+}
+.select-box label {
+	color: #000;
+	text-shadow: 1px 1px #eeeeee;
+}
+
+/* ---      gty-section       ----*/
+
+.gty-section {
+	display: flex;
+	margin-top: 20px;
+}
+.gty-overlay {
+	display: flex;
+	align-items: center;
+	border: 2px solid #eeeeee;
+}
+.button-subtract, .button-add {
+	background-color: #fff;
+	color: #000;
 }

@@ -52,10 +52,10 @@
                   <div class="layout-item">
                     <div class="preview-descript-section">
                       <div class="preview-descript-header">
-                        <h4 class="preview-heading">Black T-Shirt</h4>
+                        <h3 class="preview-heading">Black T-Shirt</h3>
                         <div class="preview-price-overlay">
                           <div class="preview-price">
-                            <h3>$12.99</h3>
+                            <h2>$12.99</h2>
                             <del>$18.69</del>
                           </div>
                           <div class="preview-status">
@@ -84,48 +84,54 @@
                         </div>
 
                         <div class="product-details">
-                          <form action="#" >
-                            <fieldset id="forms__input" class="details-form">
-                              <div class="select-box">
-                                <label for="">SIZE</label>
-                                <select name="size">
-                                  <option value="XS">XS</option>
-                                  <option value="S" selected>S</option>
-                                  <option value="M">M</option>
-                                  <option value="L">L</option>
-                                </select>
+                          <form action="#" class="details-form">
+                            <fieldset id="forms__input">
+                              <div class="product-overlay">
+                                <div class="select-box">
+                                  <label for="">SIZE</label>
+                                  <select name="size">
+                                    <option value="XS">XS</option>
+                                    <option value="S" selected>S</option>
+                                    <option value="M">M</option>
+                                    <option value="L">L</option>
+                                  </select>
+                                </div>
+                                <div class="select-box">
+                                  <label for="">COLOR</label>
+                                  <select name="Color">
+                                    <option value="black">black</option>
+                                    <option value="blue" selected>blue</option>
+                                    <option value="red">red</option>
+                                    <option value="green">green</option>
+                                  </select>
+                                </div>
                               </div>
-                              <div class="select-box">
-                                <label for="">COLOR</label>
-                                <select name="Color">
-                                  <option value="black">black</option>
-                                  <option value="blue" selected>blue</option>
-                                  <option value="red">red</option>
-                                  <option value="green">green</option>
-                                </select>
-                              </div>
+                              
                               
                             </fieldset>
                           </form>
 
                           <div class="gty-section">
-                            <form action="/cart/change" method="post">
-                              <input type="hidden" name="id" value="83847">
-                              <input type="hidden" name="size" value="s">
-                              <input type="hidden" name="count" value="0">
-                              <button class="button-add">
-                                <span class="icon-add"></span>
-                              </button>
+                            <div class="gty-overlay">
+                              <form action="/cart/change" method="post">
+                                <input type="hidden" name="id" value="83847">
+                                <input type="hidden" name="size" value="s">
+                                <input type="hidden" name="count" value="0">
+                                <button class="button-add">
+                                  <span class="icon-add"></span>
+                                </button>
+                              </form>
+                              <input type="text" name="quantity" value="1" disabled="disabled">
+                              <form action="/cart/change" method="post">
+                                <input type="hidden" name="id" value="83847">
+                                <input type="hidden" name="size" value="s">
+                                <input type="hidden" name="count" value="2">
+                                <button class="button-subtract">
+                                  <span class="icon-subtract"></span>
+                                </button>
                             </form>
-                            <input type="text" name="quantity" value="1" disabled="disabled">
-                            <form action="/cart/change" method="post">
-                              <input type="hidden" name="id" value="83847">
-                              <input type="hidden" name="size" value="s">
-                              <input type="hidden" name="count" value="2">
-                              <button class="button-subtract">
-                                <span class="icon-subtract"></span>
-                              </button>
-                            </form>
+                            </div>
+                            
                             <button>Add to cart</button>
                           </div>
                         </div>

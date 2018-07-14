@@ -1,20 +1,20 @@
 :root {
-  --button-color: #222;
-  --button-background: #f5f5f5;
-  --button-font-family: inherit;
+  --button-color: #ffffff;
+  --button-background: #e05d6f;
+  --button-font-family: Raleway, inherit;
   --button-font-size: var(--global-font-size);
   --button-font-weight: normal;
-  --button-padding: 6px 14px;
-  --button-height: var(--global-control-height);
+  --button-padding: 14px 12px;
+  --button-height: 36px;
 
-  --button-color-hover: #222;
-  --button-background-hover: #ececec;
+  --button-color-hover: #e05d6f;
+  --button-background-hover: #ffffff;
 
-  --button-color-focus: #222;
-  --button-background-focus: #ececec;
+  --button-color-focus: #e05d6f;
+  --button-background-focus: #ffffff;
 
-  --button-color-active: #222;
-  --button-background-active: #ececec;
+  --button-color-active: #e05d6f;
+  --button-background-active: #ffffff;
 }
 
 
