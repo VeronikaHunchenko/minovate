@@ -10,7 +10,7 @@
   --form-focus-background:                         #cccccc;
   --form-focus-color:                              var(--global-color);
 
-  --form-disabled-background:                      /*#e7e6e6;*/
+  --form-disabled-background:                      /*#e7e6e6;*/;
   --form-disabled-color:                           var(--global-muted-color);
 
   --form-placeholder-color:                        var(--global-muted-color);
@@ -19,7 +19,7 @@
   --form-valid-color:                              var(--global-success-background);
 
   --form-select-padding-right:                     20px;
-  --form-select-option-color:                      #444;
+  --form-select-option-color:                      #222222;
 
   --form-radio-size:                               16px;
   --form-radio-margin-top:                         -4px;
@@ -162,7 +162,10 @@ select {
   box-shadow: 0 0 0 0 transparent inset;
   border-radius: 0;
 }
-
+select {
+  padding: 9px 40px;
+  cursor: pointer;
+}
 ::placeholder {
   color: var(--form-placeholder-color);
   opacity: 1;
@@ -222,7 +225,7 @@ select:not([multiple]):not([size])::-ms-expand {
 }
 
 select:not([multiple]):not([size]) option {
-  color: var(--form-select-option-color)
+  color: var(--form-select-option-color);
 }
 
 select:not([multiple]):not([size]):disabled { 

@@ -8,7 +8,9 @@
 
   <!-- **************   ICONS *****************-->
   <link rel="stylesheet" href="images/icomoon/style.css">
-
+  
+  <!-- **************  FONTS  *****************-->
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700|Raleway:300,400,500,700" rel="stylesheet">
   <title>Single product</title>
 </head>
 
@@ -42,9 +44,16 @@
                         <img src="images/preview1.png" alt="">
                       </div>
                       <div class="preview-slider">
-                        <img src="images/preview2.png" alt="">
-                        <img src="images/preview2.png" alt="">
-                        <img src="images/preview2.png" alt="">
+                        <div class="previev-img-overlay">
+                          <img src="images/preview2.png" alt="">
+                        </div>
+                        <div class="previev-img-overlay">
+                          <img src="images/preview2.png" alt="">
+                        </div>
+                        <div class="previev-img-overlay">
+                          <img src="images/preview2.png" alt="">
+                        </div>
+                        
                       </div>
                     </div>
                   </div>
@@ -55,11 +64,11 @@
                         <h3 class="preview-heading">Black T-Shirt</h3>
                         <div class="preview-price-overlay">
                           <div class="preview-price">
-                            <h2>$12.99</h2>
+                            <h2 class="price-color">$12.99</h2>
                             <del>$18.69</del>
                           </div>
                           <div class="preview-status">
-                            <p>Availibility: <span class="status-select">In stock</span></p>
+                            <p class="muted-color">Availibility: <span class="status-select">In stock</span></p>
                           </div>
                         </div>
                       </div>
@@ -89,9 +98,10 @@
                               <div class="product-overlay">
                                 <div class="select-box">
                                   <label for="">SIZE</label>
-                                  <select name="size">
+                                  <select name="size" class="product-select">
+                                    <option value="#"></option>
                                     <option value="XS">XS</option>
-                                    <option value="S" selected>S</option>
+                                    <option value="S">S</option>
                                     <option value="M">M</option>
                                     <option value="L">L</option>
                                   </select>
@@ -99,8 +109,9 @@
                                 <div class="select-box">
                                   <label for="">COLOR</label>
                                   <select name="Color">
+                                    <option value="#"></option>
                                     <option value="black">black</option>
-                                    <option value="blue" selected>blue</option>
+                                    <option value="blue">blue</option>
                                     <option value="red">red</option>
                                     <option value="green">green</option>
                                   </select>
@@ -113,37 +124,33 @@
 
                           <div class="gty-section">
                             <div class="gty-overlay">
-                              <form action="/cart/change" method="post">
-                                <input type="hidden" name="id" value="83847">
-                                <input type="hidden" name="size" value="s">
-                                <input type="hidden" name="count" value="0">
-                                <button class="button-add">
-                                  <span class="icon-add"></span>
-                                </button>
+                              <button class="button-add">
+                                <span class="icon-subtract"></span>
+                              </button>
+                              <form action="" class="gty-form">
+                                <input type="text" name="quantity" value="1">
                               </form>
-                              <input type="text" name="quantity" value="1" disabled="disabled">
-                              <form action="/cart/change" method="post">
-                                <input type="hidden" name="id" value="83847">
-                                <input type="hidden" name="size" value="s">
-                                <input type="hidden" name="count" value="2">
-                                <button class="button-subtract">
-                                  <span class="icon-subtract"></span>
-                                </button>
-                            </form>
+                              
+                              <button class="button-subtract">
+                                <span class="icon-add"></span>
+                              </button>
                             </div>
                             
-                            <button>Add to cart</button>
+                            <button class="button-transparent button-large">Add to cart</button>
                           </div>
                         </div>
 
                         <div class="about-section">
                           <div class="about-section-top">
-                            <span class="icon-star"></span>
-                            <span class="icon-star"></span>
-                            <span class="icon-star"></span>
-                            <span class="icon-star"></span>
-                            <span class="icon-star"></span>
-                            <p>8 Reviews / <span class="status-select">Write Review</span></p>
+                            <div class="icon-star-overlay">
+                              <span class="icon-star"></span>
+                              <span class="icon-star"></span>
+                              <span class="icon-star"></span>
+                              <span class="icon-star"></span>
+                              <span class="icon-star"></span>
+                            </div>
+                           
+                            <p>8 Reviews / <span class="">Write Review</span></p>
                           </div>
                           <div class="about-section-bottom">
                             <p>SKU:  SK0631661126</p>
@@ -153,7 +160,7 @@
                         </div>
 
                         <div class="share-socials-overlay">
-                          <h6>share</h6>
+                          <p class="uppercase bold">share</p>
                           <div class="share-socials">
                             <a href="#" class="link-social">
                               <span class="icon-facebook"></span>

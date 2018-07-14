@@ -8,27 +8,52 @@
   --button-height: 36px;
 
   --button-color-hover: #e05d6f;
-  --button-background-hover: #ffffff;
+  --button-background-hover: #e4abb3;
 
   --button-color-focus: #e05d6f;
-  --button-background-focus: #ffffff;
+  --button-background-focus: #e4abb3;
 
   --button-color-active: #e05d6f;
-  --button-background-active: #ffffff;
+  --button-background-active: #e4abb3;
+<<<<<<< HEAD
+=======
+
+  --button-padding-small: 10px 10px;
+
+  --button-transparent-color: #222222;
+  --button-transparent-background: transparent;
+  --button-transparent-font-family: Raleway, inherit;
+  --button-transparent-font-size: var(--global-font-size);
+  --button-transparent-font-weight: normal;
+  --button-transparent-padding: 10px 20px;
+  --button-transparent-height: 30px;
+
+  --button-transparent-color-hover: #222222;
+  --button-transparent-background-hover: #e5e5e5;
+
+  --button-transparent-color-focus: #222222;
+  --button-transparent-background-focus: #e5e5e5;
+
+  --button-transparent-color-active: #222222;
+  --button-transparent-background-active: #e5e5e5;
+  --button-tranparent-border: 1px solid  #e5e5e5;
+  --button-transparent-border-focus: #222222;
+  --button-transparent-border-active: #222222;
+>>>>>>> 5bf26f373508f986d1611b27d57041b5aa1ff000
 }
 
 
 button,
 input[type="button"],
 input[type="submit"],
-.button {
+.button, 
+.button-transparent {
   margin: 0;
   position: relative;
   -webkit-appearance: none;
   -moz-appearance: none;
   border: none;
   user-select: none;
-  border-radius: 0;
   overflow: visible;
   font: inherit;
   text-transform: none;
@@ -43,7 +68,9 @@ input[type="submit"],
   background: var(--button-background);
   color: var(--button-color);
 }
-
+.button {
+  border-radius: 0;
+}
 .button:not(:disabled) {
   cursor: pointer
 }
@@ -74,4 +101,19 @@ input[type="submit"],
 .button:disabled {
   pointer-events: none;
   opacity: 0.45;
+}
+.button-transparent {
+  border-radius: 2px;
+  color: #222222;
+  border: 2px solid #e5e5e5;
+  text-transform: uppercase;
+  background-color: transparent;
+  text-shadow: 1px 1px #eeeeee;
+  cursor: pointer
+}
+.button-transparent:hover {
+  text-decoration: none;
+}
+.button-large {
+  padding: 8px 25px;
 }
