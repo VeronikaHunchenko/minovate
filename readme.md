@@ -79,8 +79,7 @@
 
 
 ###modules #### product-list
-
-    - breadcrumps
+  - breadcrumps
       - layout-breadcrumps
         -layout-item*2
 
@@ -103,7 +102,7 @@
         - grid-sale
           - grid-item*3
           - card-sale
-    
+
   - features
       - grid-features
         -grid-item*3
@@ -169,3 +168,10 @@ features
 partners
 pre-footer
 footer
+
+Breakpoint
+
+640px
+768px
+992px
+1200px
