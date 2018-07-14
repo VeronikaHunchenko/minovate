@@ -15,6 +15,28 @@
 
   --button-color-active: #e05d6f;
   --button-background-active: #ffffff;
+
+
+
+  --button-transparent-color: #222222;
+  --button-transparent-background: transparent;
+  --button-transparent-font-family: Raleway, inherit;
+  --button-transparent-font-size: var(--global-font-size);
+  --button-transparent-font-weight: normal;
+  --button-transparent-padding: 10px 20px;
+  --button-transparent-height: 30px;
+
+  --button-transparent-color-hover: #222222;
+  --button-transparent-background-hover: #e5e5e5;
+
+  --button-transparent-color-focus: #222222;
+  --button-transparent-background-focus: #e5e5e5;
+
+  --button-transparent-color-active: #222222;
+  --button-transparent-background-active: #e5e5e5;
+  --button-tranparent-border: 1px solid  #e5e5e5;
+  --button-transparent-border-focus: #222222;
+  --button-transparent-border-active: #222222;
 }
 
 
