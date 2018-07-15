@@ -5,6 +5,9 @@
 .layout-preview {
 	display: flex;
 }
+.layout-preview > .layout-item {
+	padding-top: 60px;
+}
 .layout-preview > .layout-item:first-child {
 	width: 40%;
 	background-color: #fff;
@@ -237,4 +240,7 @@ select {
 }
 .link-social > span {
 	font-size: 0.5em;
+}
+.blue {
+	color: #428bca;
 }

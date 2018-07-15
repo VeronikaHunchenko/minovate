@@ -21,7 +21,7 @@
   --form-select-padding-right:                     20px;
   --form-select-option-color:                      #222222;
 
-  --form-radio-size:                               16px;
+  --form-radio-size:                               18px;
   --form-radio-margin-top:                         -4px;
   --form-radio-background:                         #f5f5f5;
 
@@ -45,7 +45,7 @@
   --form-range-thumb-border-radius:                500px;
   --form-range-thumb-background:                   var(--global-color);
 
-  --form-range-track-height:                       3px;
+  --form-range-track-height:                       5px;
   --form-range-track-background:                   var(--global-muted-background);
   --form-range-track-focus-background:             var(--global-muted-background);
 
@@ -243,10 +243,11 @@ input[type="checkbox"] {
   vertical-align: middle;
   -webkit-appearance: none;
   -moz-appearance: none;
-  background-color: var(--form-radio-background);
+  background-color: #fff;
   background-repeat: no-repeat;
-  background-size: 16px;
+  background-size: 13px;
   background-position: 50% 50%;
+  border: 2px solid #b2b2b2;
 }
 
 input[type="radio"] {
@@ -273,7 +274,8 @@ input[type="checkbox"]:focus {
 input[type="radio"]:checked,
 input[type="checkbox"]:checked,
 input[type="checkbox"]:indeterminate {
-  background-color: var(--form-radio-checked-background);
+  background-color: #fff;
+
 }
 
 input[type="radio"]:checked:focus,
@@ -298,7 +300,7 @@ input[type="radio"]:disabled,
 input[type="checkbox"]:disabled {
   background-color: var(--form-radio-disabled-background);
 }
-
+/*
 input[type="range"] {
   box-sizing: border-box;
   margin: 0;
@@ -308,8 +310,8 @@ input[type="range"] {
   -webkit-appearance: none;
   background: transparent;
   padding: 0;
-}
-
+}*/
+/*
 input[type="range"]:focus { outline: none; }
 input[type="range"]::-moz-focus-outer { border: none; }
 
@@ -383,6 +385,76 @@ input[type="range"]::-ms-fill-upper {
 input[type="range"]:focus::-ms-fill-lower,
 input[type="range"]:focus::-ms-fill-upper {
   background: var(--form-range-track-focus-background);
+}*/
+input[type="range"].multirange {
+  width: 200px;
+}
+
+.range {
+  display: flex;
+  justify-content: space-between;
+  width: 100px;
+  font-size: 13px;
+}
+
+input[type="range"].multirange {
+  padding: 0;
+  --range-color: #e05d6f;
+  margin: 0;
+  display: inline-block;
+  vertical-align: top;
+  -webkit-appearance: none;
+  appearance: none;
+  outline: none;
+}
+
+input[type="range"].multirange.original {
+  position: absolute;
+}
+
+input[type="range"].multirange::-webkit-slider-runnable-track {
+  background: linear-gradient(to right, #ddd, #ddd) no-repeat 0 50% / 100% 20%;
+}
+
+input[type="range"].multirange.original::-webkit-slider-thumb {
+  position: relative;
+  z-index: 2;
+}
+
+input[type="range"].multirange::-webkit-slider-thumb {
+  position: relative;
+  z-index: 2;
+  --range-color: #000;
+  -webkit-appearance: none;
+  border-radius: 0;
+  border: none;
+  display: block;
+  background: var(--range-color);
+  height: 20px;
+  width: 20px;
+  
+}
+
+input[type="range"].multirange.original::-moz-range-thumb {
+  transform: scale(1); /* FF doesn't apply position it seems */
+  z-index: 1;
+}
+
+input[type="range"].multirange::-moz-range-track {
+  border-color: transparent; /* needed to switch FF to "styleable" control */
+}
+
+input[type="range"].multirange.ghost {
+  position: relative;
+  background: linear-gradient(to right, transparent var(--low), var(--range-color) 0, var(--range-color) var(--high), transparent 0 ) no-repeat 0 50% / 100% 20%;
+}
+
+input[type="range"].multirange.ghost::-webkit-slider-runnable-track {
+  background: linear-gradient(to right, transparent var(--low), var(--range-color) 0, var(--range-color) var(--high), transparent 0 ) no-repeat 0 50% / 100% 20%;
+}
+
+input[type="range"].multirange.ghost::-moz-range-track {
+  background: linear-gradient(to right, transparent var(--low), var(--range-color) 0, var(--range-color) var(--high), transparent 0 ) no-repeat 0 45% / 100% 40%;
 }
 
 label.is-invalid {
