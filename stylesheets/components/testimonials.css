@@ -1,0 +1,140 @@
+.testimonials {
+  background-color: #fff;
+  padding-bottom: 40px;
+}
+.tabs {
+  padding-left: 20px;
+  padding-right: 20px;
+  
+}
+.tabs-nav {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+  display: flex;
+  text-transform: uppercase;
+  padding-bottom: 0.5px;
+  border-bottom: 2px solid #e05d6f;
+  font-size: 11px;
+  background-color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+
+}
+  
+.tabs-nav>li:not(:last-child) {
+  margin-right: 1px;
+}
+  
+.tabs-nav>li>span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 20px;
+  background-color: #e9e9e9;
+  color: #000;
+  text-decoration: none;
+
+}
+  
+.tabs-nav>li>span:hover,
+.tabs-nav>li>span:focus,
+.tabs-nav>li.is-active>span {
+  text-decoration: none;
+  background-color: #e05d6f;
+  color: #fff;
+
+}
+.tabs-content {
+  padding: 14px 0;
+  background-color: #fff;
+}
+.tabs-pane {
+  display: none;
+  text-align: justify;
+}
+.tabs-pane.is-active {
+  display: block;
+}
+.block-testimonials {
+  border-bottom: 1px solid #eeeeee;
+}
+.testimonials-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding-top: 25px;
+}
+time {
+  font-size: 11px;
+  color: #cccccc;
+}
+.testimonials-header p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.testimonials-body p {
+  color: #b2b2b2;
+  font-size: 13px;
+  padding-top: 10px;
+}
+.testimonials-body {
+  padding-bottom: 20px;
+}
+/* -------------  form  --------------*/
+
+.testimonials-form {
+  padding-left: 20px;
+  padding-right: 20px;
+  
+}
+.testimonials-form h6 { 
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.input-section > 
+input[type=email], 
+input[type=text],
+textarea {
+  border: 2px solid #e8e8e8;
+  color: #e8e8e8; 
+  padding: 6px 9px;
+  font-size: 13px;
+}
+.input-section > ::placeholder {
+  color: #e8e8e8;
+
+}
+.section-personal-contacts {
+  display: flex;
+  padding-bottom: 20px;
+}
+.section-personal-contacts > .input-section {
+  width: 50%;
+}
+.section-personal-contacts > .input-section:first-child {
+  padding-right: 30px;
+}
+.rating-overlay {
+  display: flex;
+  padding-top: 7px;
+  padding-bottom: 20px;
+  justify-content: space-between;
+}
+.rating-section {
+  display: flex;
+  align-items: center;
+}
+.rating-section h6 {
+  padding-bottom: 0;
+  margin-bottom: 0;
+  margin-right: 12px;
+}
+.rating>.icon-star {
+  margin-bottom: 2px;
+}
+.icon-link > 
+.is-active, 
+.icon-star:hover {
+  color: #e4992e;
+}

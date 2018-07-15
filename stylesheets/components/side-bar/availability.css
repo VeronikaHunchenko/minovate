@@ -1,0 +1,23 @@
+.availability {
+	background-color: #fff;
+}
+
+.form-checkbox {
+	padding: 20px;
+}
+.fieldset-checkbox {
+	display: inline-flex;
+
+}
+.checkbox-overlay > span {
+	padding-left: 10px;
+	color: #b2b2b2;
+}
+
+.range-input {
+	padding: 20px;
+}
+.range {
+	padding-bottom: 15px;
+	color: #b2b2b2;
+}

@@ -1,0 +1,246 @@
+.page-main {
+	background-color: #f8f8f8;
+	font-size: 13px;
+}
+.layout-preview {
+	display: flex;
+}
+.layout-preview > .layout-item {
+	padding-top: 60px;
+}
+.layout-preview > .layout-item:first-child {
+	width: 40%;
+	background-color: #fff;
+}
+.layout-preview > .layout-item:last-child {
+	width: 60%;
+	background-color: #fff;
+}
+
+/* ------------     preview-img-section   ------------------*/
+.preview-img-section {
+	padding-left: 18px;
+	padding-right: 18px;
+	display: flex;
+	flex-direction: column;
+}
+.preview-big-img {
+	padding-bottom: 20px;
+	border-bottom: 1px solid #eeeeee;
+
+}
+.preview-big-img img {
+	display: inline-block;
+}
+.preview-slider {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #eeeeee;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+/* ------------     preview-descript-section   --------------*/
+.preview-descript-section {
+	padding-right: 20px;
+}
+.preview-heading {
+	padding-bottom: 15px;
+	border-bottom: 1px solid #eeeeee;
+}
+.preview-price-overlay {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	padding-bottom: 15px;
+	border-bottom: 1px solid #eeeeee;
+}
+.preview-descript-content p {
+	margin-top: 40px;
+	margin-bottom: 40px;
+	color: #999999;
+}
+.preview-price {
+	display: flex;
+	align-items: flex-end;
+
+}
+.preview-price h2 {
+	margin-bottom: 0;
+	padding-bottom: 0;
+	font-size: 28px;
+}
+.preview-price del {
+	line-height: 1.7;
+}
+.preview-status {
+	margin-top: -15px;
+}
+.descript-box {
+	position: relative;
+	display: flex;
+	align-items: center;
+}
+.descript-triangle {
+	position: absolute;
+    border: 5px solid transparent;	
+	border-left: 5px solid #999999;
+}
+.item-descript-list {
+	padding-left: 15px;
+}
+.descript-box p {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.descript-box:last-child {
+	margin-bottom: 40px;
+}
+.descript-lists {
+	border-bottom: 1px solid #eeeeee;
+}
+
+/* -----------      product-details      ---------------*/
+
+.product-overlay {
+	display: flex;
+	border-bottom: 1px solid #eeeeee;
+}
+.select-box {
+	display: flex;
+	align-items: center;
+	padding-right: 40px;
+
+}
+.select-box select {
+	min-width: 90px;
+	border: 2px solid #eeeeee;
+	border-radius: 3px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-left: 15px;
+
+}
+.select-box label {
+	color: #000;
+	text-shadow: 1px 1px #eeeeee;
+}
+
+
+/* ---      gty-section       ----*/
+
+.gty-section {
+	display: flex;
+	margin-top: 20px;
+	justify-content: space-between;
+}
+.gty-overlay {
+	display: flex;
+	align-items: center;
+	max-width: 114px;
+	margin-right: 40px;
+}
+.button-subtract, .button-add {
+	background-color: transparent;
+	color: #000;
+	padding: 11px 10px;
+	cursor: pointer;
+}
+.gty-form input {
+	border-top: 2px solid #eeeeee;
+	border-bottom: 2px solid #eeeeee;
+	display: flex;
+	align-items: center;
+	color: #222222;
+	text-align: center;
+
+
+}
+.gty-form > 
+input[type=text],
+select {
+	padding: 0;
+}
+
+.button-add {
+	border: 2px solid #eeeeee;
+}
+.button-subtract {
+	border: 2px solid #eeeeee;
+}
+
+/* ----------     about    ---------------*/
+.about-section {
+	color: #999999;
+	border: 2px solid #eeeeee;
+	margin-top: 25px;
+	margin-bottom: 20px;
+	position: relative;
+}
+.about-section-top {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 20px 0 20px;
+}
+.about-section-bottom::before {
+	content: '';
+	position: absolute;
+	border-bottom: 2px solid #eeeeee;
+	right: 0;
+    left: 0;
+    top: 25%;
+}
+.icon-star-overlay > span {
+	padding: 0;
+	margin: 0;
+}
+.icon-star {
+	color: #f0ad4e;
+}
+.about-section-bottom {
+	padding: 30px 20px 30px 20px;
+
+}
+.uppercase {
+	text-transform: uppercase;
+}
+.bold {
+	font-weight: 700;
+}
+/* -----------       socials       -------------*/
+.share-socials-overlay {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 45px;
+}
+.share-socials-overlay p {
+	margin-bottom: 0;
+}
+.share-socials {
+	display: flex;
+}
+.link-social {
+	color: #fff;
+	background-color: #222222;
+	margin-right: 7px;
+	width: 1em;
+	height: 1em;
+	font-size: 30px;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+
+}
+.link-social:last-child {
+	margin-right: 0;
+}
+.link-social > span {
+	font-size: 0.5em;
+}
+.blue {
+	color: #428bca;
+}
