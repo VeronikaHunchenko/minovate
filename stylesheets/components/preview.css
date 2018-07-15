@@ -1,5 +1,6 @@
 .page-main {
 	background-color: #f8f8f8;
+	font-size: 13px;
 }
 .layout-preview {
 	display: flex;
@@ -134,30 +135,31 @@
 .gty-overlay {
 	display: flex;
 	align-items: center;
-	
 	max-width: 114px;
-
 	margin-right: 40px;
 }
 .button-subtract, .button-add {
 	background-color: transparent;
 	color: #000;
-	padding: 10px 9px;
+	padding: 11px 10px;
 	cursor: pointer;
 }
 .gty-form input {
 	border-top: 2px solid #eeeeee;
 	border-bottom: 2px solid #eeeeee;
-
 	display: flex;
 	align-items: center;
 	color: #222222;
+	text-align: center;
 
 
 }
-.gty-form  {
-
+.gty-form > 
+input[type=text],
+select {
+	padding: 0;
 }
+
 .button-add {
 	border: 2px solid #eeeeee;
 }
@@ -186,6 +188,10 @@
 	right: 0;
     left: 0;
     top: 25%;
+}
+.icon-star-overlay > span {
+	padding: 0;
+	margin: 0;
 }
 .icon-star {
 	color: #f0ad4e;

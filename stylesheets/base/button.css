@@ -15,8 +15,7 @@
 
   --button-color-active: #e05d6f;
   --button-background-active: #e4abb3;
-<<<<<<< HEAD
-=======
+
 
   --button-padding-small: 10px 10px;
 
@@ -39,7 +38,7 @@
   --button-tranparent-border: 1px solid  #e5e5e5;
   --button-transparent-border-focus: #222222;
   --button-transparent-border-active: #222222;
->>>>>>> 5bf26f373508f986d1611b27d57041b5aa1ff000
+
 }
 
 
@@ -109,11 +108,13 @@ input[type="submit"],
   text-transform: uppercase;
   background-color: transparent;
   text-shadow: 1px 1px #eeeeee;
-  cursor: pointer
+  cursor: pointer;
+  font-size: 11px;
 }
 .button-transparent:hover {
   text-decoration: none;
+  background-color:  #eeeeee;
 }
 .button-large {
-  padding: 8px 25px;
+  padding: 6px 25px;
 }
