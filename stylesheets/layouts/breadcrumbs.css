@@ -1,0 +1,9 @@
+.layout-breadcrumbs{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.layout-breadcrumbs .layout-item:nth-child(1){
+    display: flow;
+    flex-direction: column;
+}

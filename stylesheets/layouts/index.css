@@ -2,6 +2,7 @@
 @import 'hero.css';
 @import 'section.css';
 @import "header.css";
+@import "breadcrumbs.css";
 
 .layout-page-main {
 	display: flex;
