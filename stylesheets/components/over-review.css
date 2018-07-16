@@ -1,0 +1,148 @@
+.card-review {
+  position: relative;
+  width: 220px;
+  overflow: hidden;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.card-review-foto {
+  position: relative;
+}
+
+.card-review:hover .foto-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(0,0,0,0.6);
+  opacity: 0.2;
+}
+
+.card-review:hover .card-reveiw-header {
+  color: #e05d6f;
+  border-bottom: 1px solid #e05d6f;
+}
+
+.card-review:hover .card-reveiw-add {
+  border: 1px solid #e05d6f;
+}
+
+.card-review:hover .card-review-icon {
+  opacity: 1;
+}
+
+.foto-foreground {
+  display: flex;
+  -ms-align-self: flex-end;
+  align-self: flex-end;
+  height: 307px;
+  overflow: hidden;
+  padding-top: 25px;
+}
+
+
+.foto-foreground img {
+  display: block;
+  width: 140px;
+  margin: 0 auto;
+  object-fit: contain;
+}
+
+.card-review-desk {
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-right: 8px;
+}
+
+.card-review-mark {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 3px 18px;
+  font-family: Raleway;
+  text-transform: uppercase;
+  color: white;
+  font-size: 11px;
+}
+
+.mark-red {
+  background-color: #e05d6f;
+}
+
+.mark-green {
+  background-color: #16a085;
+}
+
+.mark-blue {
+  background-color: #5bc0de;
+}
+
+.card-reveiw-header {
+  display: inline-block;
+  color: #666666;
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 300;
+  text-transform: uppercase;
+  border-bottom: 1px solid transparent;
+  transition: 0.8s;
+}
+
+.card-reveiw-price {
+  color: #e05d6f;
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 33px;
+  text-transform: uppercase;
+}
+
+.card-reveiw-add {
+  padding: 0px 7px;
+  background-color: #fff;
+  color: #cccccc;
+  border: 1px solid transparent;
+  font-family: Lato;
+  font-size: 11px;
+  font-weight: 400;
+  text-transform: uppercase;
+  transition: 0.8s;
+}
+
+.card-cost {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.card-review-icon {
+  position: absolute;
+  top: 50%;
+  width: 45px;
+  height: 45px;
+  text-align: center;
+  line-height: 45px;
+  font-size: 26px;
+  color: #fff;
+  background-color: #e05d6f;
+  opacity: 0;
+  transition: 0.8s;
+}
+
+.icon-more {
+  right: 0;
+}
+
+.icon-magnifier {
+  background-image: url('../../images/searching.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: rotate(270deg);
+}
+
+.card-reveiw-add svg {
+  margin-right: 5px;
+  transform: rotate(180deg);
+}
