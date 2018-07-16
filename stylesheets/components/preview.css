@@ -147,6 +147,9 @@
 	padding: 11px 10px;
 	cursor: pointer;
 }
+.gty-form {
+	display: flex;
+}
 .gty-form input {
 	border-top: 2px solid #eeeeee;
 	border-bottom: 2px solid #eeeeee;
@@ -163,11 +166,15 @@ select {
 	padding: 0;
 }
 
+.button-add, .button-subtract  {
+	border-top: 2px solid #eeeeee;
+	border-bottom: 2px solid #eeeeee;
+}
 .button-add {
-	border: 2px solid #eeeeee;
+	border-left: 2px solid #eeeeee;
 }
 .button-subtract {
-	border: 2px solid #eeeeee;
+	border-right: 2px solid #eeeeee;
 }
 
 /* ----------     about    ---------------*/
