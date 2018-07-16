@@ -1,0 +1,10 @@
+.over-review {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 700px;
+}
+
+.card-review {
+  margin-bottom: 20px;
+}

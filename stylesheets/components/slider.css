@@ -1,3 +1,7 @@
+.slider {
+  margin-bottom: 39px;
+}
+
 .slider-image {
   text-align: -webkit-center;
 }
@@ -16,6 +20,7 @@
   width: 27px;
   height: 100px;
   background: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
 }
 
 .button-slider-next   {
