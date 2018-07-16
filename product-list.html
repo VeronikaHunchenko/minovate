@@ -2,137 +2,295 @@
 <html lang="en" dir="ltr">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="stylesheets/styles.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="stylesheets/styles.css">
 
-  <!-- **************   ICONS *****************-->
-  <link rel="stylesheet" href="images/icomoon/style.css">
-  
-  <!-- **************  FONTS  *****************-->
-  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700|Raleway:300,400,500,700" rel="stylesheet">
-  
-  <title>Product list</title>
+    <!-- **************   ICONS *****************-->
+    <link rel="stylesheet" href="images/icomoon/style.css">
+    <link rel="stylesheet" href="images/icomoon2/style.css">
+
+    <!-- **************   FONTS *****************-->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700,800" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700|Raleway:300,400,500,700" rel="stylesheet">
+
+    <title>Product list</title>
 </head>
 
 <body>
 
-  <div class="wrapper">
+<div class="wrapper">
     <!-- ********* START HEADER *********-->
-    
+    <header>
+        <div class="header-top">
+            <div class="container">
+                <div class="layout-header-top">
+                    <div class="layout-item">
+                        <div class="header-phone">
+
+                            <span class="icon-phone"></span>
+                            <a class="header-phone-link" href="tel:+38-0421-964-335-12">+421 964 335 12</a>
+
+                        </div>
+
+                        <div class="header-valuta">
+                            <a href="#" class="is-active">€</a>
+                            <a href="#">£</a>
+                            <a href="#">$</a>
+                        </div>
+
+                        <div class="header-language">
+                            <span>English</span>
+                        </div>
+
+
+                    </div>
+
+                    <div class="layout-item">
+                        <ul class="user-navbar">
+                            <li class="">
+                                <a href="#">My Account</a>
+                            </li>
+                            <li class="navbar-item">
+                                <a href="#">Wishlist</a>
+                            </li>
+                            <li class="navbar-item">
+                                <a href="#">Checkout</a>
+                            </li>
+                            <li class="navbar-item">
+                                <a href="#">Login</a>
+                            </li>
+                        </ul>
+
+                        <div class="mobile-user-navbar">
+                            <ul>
+                                <li><a href="#"> <span class="icon-user"></span></a>
+                                    <ul>
+                                        <li><a class="mobile-user-navbar-link" href="#">My Account</a></li>
+                                        <li><a class="mobile-user-navbar-link" href="#">Wishlist</a></li>
+                                        <li><a class="mobile-user-navbar-link" href="#">Checkout</a></li>
+                                        <li><a class="mobile-user-navbar-link" href="#">Login</a></li>
+                                    </ul>
+
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-bottom">
+            <div class="container">
+                <div class="layout-header-bottom">
+                    <div class="layout-item">
+                        <a href="#" class="logo">
+                            <img src="images/logo.png" alt="logo">
+                        </a>
+                    </div>
+
+
+                    <div class="layout-item">
+                        <nav class="navbar">
+                            <ul class="navbar-nav">
+                                <li class="navbar-item">
+                                    <a href="#" class="navbar-link ">Home</a>
+                                </li>
+                                <li class="navbar-item">
+                                    <a href="#" class="navbar-link">Woman</a>
+                                </li>
+                                <li class="navbar-item">
+                                    <a href="product-list.html" class="navbar-link is-active">Man</a>
+                                </li>
+                                <li class="navbar-item">
+                                    <a href="#" class="navbar-link">Kids</a>
+                                </li>
+                                <li class="navbar-item">
+                                    <a href="#" class="navbar-link">Hot</a>
+                                </li>
+                                <li class="navbar-item">
+                                    <a href="checkout.html" class="navbar-link">Pages</a>
+                                </li>
+                            </ul>
+
+                            <ul class="action-navbar-nav">
+                                <li><a href=""><span class="icon-search"></span></a></li>
+                                <li><a href=""><span class="icon-shopping-cart"></span></a></li>
+                            </ul>
+                        </nav>
+
+                        <div class="mob_menu_bg"></div>
+
+                        <a class="mobile-nav__openbtn" id="mobile-nav__openbtn" onclick="openNav()" href="#">
+                            <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"
+                                 version="1.1">
+                                <rect y="9" width="20" height="2" fill="#85D2FF"></rect>
+                                <rect y="3" width="20" height="2" fill="#85D2FF"></rect>
+                                <rect y="15" width="20" height="2" fill="#85D2FF"></rect>
+                            </svg>
+                        </a>
+
+                        <nav class="mobile-nav" id="mobile-nav">
+
+                            <a class="mobile-nav__closebtn" type="button" href="javascript:void(0)"
+                               onclick="closeNav()">
+                                <svg width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
+                                    <line stroke-width="2" x1="1" y1="1" x2="13" y2="13"></line>
+                                    <line stroke-width="2" x1="13" y1="1" x2="1" y2="13"></line>
+                                </svg>
+                            </a>
+
+
+                            <ul class="mobile-navbar-nav">
+                                <li class="">
+                                    <a href="home.html" class="">Home</a>
+                                </li>
+                                <li class="">
+                                    <a href="#" class="">Woman</a>
+                                </li>
+                                <li class="">
+                                    <a href="#" class="is-active">Man</a>
+                                </li>
+                                <li class="">
+                                    <a href="#" class="link">Kids</a>
+                                </li>
+                                <li class="">
+                                    <a href="#" class="">Hot</a>
+                                </li>
+                                <li class="">
+                                    <a href="checkout.html" class="">Pages</a>
+                                </li>
+                            </ul>
+
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </header>
     <!-- ********* END HEADER *********-->
 
-  <main class="page-main">
+
+    <main class="page-main">
         <div class="container">
 
-          <div class="layuot layout-page-main">
-            <div class="layout-item">
-              <!-- ********* START SIDEBAR *********-->
-              <section class="sidebar">
-                <!-- start availability -->
-                <div class="availability">
-                   
-                  <div class="grid grid-availability">
-                    <div class="grid-item">
-                      <div class="sale-header">
-                        <h6>Availability</h6>
-                      </div>
-                      <form action="" class="form-checkbox">
-                        <fieldset class="fieldset-checkbox">
-                          <p class="checkbox-overlay">
-                            <input type="checkbox" name="vehicle1" value="Bike"> 
-                            <span>Not Available</span>
-                          </p>
-                          <p class="checkbox-overlay">
-                            <input type="checkbox" name="vehicle2" value="not-available"> 
-                            <span>Coming to stock</span>
-                          </p>
-                          <p class="checkbox-overlay">
-                            <input type="checkbox" name="vehicle2" value="in-stock"> 
-                            <span>In Stock</span>
-                          </p>
-                          
-                        </fieldset>
-                      </form>
-                    </div>
-                     <div class="grid-item">
-                      <div class="sale-header">
-                        <h6>Price</h6>
-                      </div>
-                      <div class="range-input">
-                        <div class="range">
-                          Range:
-                          <div class="lowDollarAmount"></div> -
-                          <div class="highDollarAmount"></div>
-                          <!-- <p>Range: $36 - $89</p> -->
+            <div class="layuot layout-page-main">
+                <div class="layout-item">
+                    <!-- ********* START SIDEBAR *********-->
+                    <section class="sidebar">
+                        <!-- start availability -->
+                        <div class="availability">
+
+                            <div class="grid grid-availability">
+                                <div class="grid-item">
+                                    <div class="sale-header">
+                                        <h6>Availability</h6>
+                                    </div>
+                                    <form action="" class="form-checkbox">
+                                        <fieldset class="fieldset-checkbox">
+                                            <p class="checkbox-overlay">
+                                                <input type="checkbox" name="vehicle1" value="Bike">
+                                                <span>Not Available</span>
+                                            </p>
+                                            <p class="checkbox-overlay">
+                                                <input type="checkbox" name="vehicle2" value="not-available">
+                                                <span>Coming to stock</span>
+                                            </p>
+                                            <p class="checkbox-overlay">
+                                                <input type="checkbox" name="vehicle2" value="in-stock">
+                                                <span>In Stock</span>
+                                            </p>
+
+                                        </fieldset>
+                                    </form>
+                                </div>
+
+                                <div class="grid-item">
+                                    <div class="sale-header">
+                                        <h6>Price</h6>
+                                    </div>
+                                    <div class="range-input">
+                                        <div class="range">
+                                            Range:
+                                            <div class="lowDollarAmount"></div>
+                                            -
+                                            <div class="highDollarAmount"></div>
+                                            <!-- <p>Range: $36 - $89</p> -->
+                                        </div>
+                                        <input id="slider" type="range" multiple value="20,50"/>
+                                    </div>
+
+
+                                </div>
+                            </div>
                         </div>
-                        <input id="slider" type="range" multiple value="20,50" />
-                      </div>
-                      
-                     
-                    </div>
-                  </div>
+                        <!-- end availability -->
+                        <!-- start sale -->
+                        <div class="sale">
+                            <div class="sale-header">
+                                <h6>best sellers</h6>
+                            </div>
+                            <div class="grid grid-sale">
+                                <div class="grid-item">
+                                    <div class="card-sale">
+                                        <div class="img-sale-overlay">
+                                            <img src="images/sale1.png" alt="">
+                                        </div>
+                                        <div class="description-overlay">
+                                            <h5>Black T-shirt</h5>
+                                            <h2 class="price-color">$12.99</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid-item">
+                                    <div class="card-sale">
+                                        <div class="img-sale-overlay">
+                                            <img src="images/sale1.png" alt="">
+                                        </div>
+                                        <div class="description-overlay">
+                                            <h5>Black T-shirt</h5>
+                                            <h2 class="price-color">$12.99</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid-item">
+                                    <div class="card-sale">
+                                        <div class="img-sale-overlay">
+                                            <img src="images/sale1.png" alt="">
+                                        </div>
+                                        <div class="description-overlay">
+                                            <h5>Black T-shirt</h5>
+                                            <h2 class="price-color">$12.99</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end sale -->
+                    </section>
+                    <!-- ********* END SIDEBAR *********-->
                 </div>
-                <!-- end availability -->
-                <!-- start sale -->
-                <div class="sale">
-                  <div class="sale-header">
-                    <h6>best sellers</h6>
-                  </div>
-                  <div class="grid grid-sale">
-                    <div class="grid-item">
-                      <div class="card-sale">
-                        <div class="img-sale-overlay">
-                          <img src="images/sale1.png" alt="">
-                        </div> 
-                        <div class="description-overlay">
-                          <h5>Black T-shirt</h5>
-                          <h2 class="price-color">$12.99</h2>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="grid-item">
-                      <div class="card-sale">
-                        <div class="img-sale-overlay">
-                          <img src="images/sale1.png" alt="">
-                        </div> 
-                        <div class="description-overlay">
-                          <h5>Black T-shirt</h5>
-                          <h2 class="price-color">$12.99</h2>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="grid-item">
-                      <div class="card-sale">
-                        <div class="img-sale-overlay">
-                          <img src="images/sale1.png" alt="">
-                        </div> 
-                        <div class="description-overlay">
-                          <h5>Black T-shirt</h5>
-                          <h2 class="price-color">$12.99</h2>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+
+                <div class="layout-item">
+
+                    <!-- Место для блока с карточками, который располагается справа от side-bar -->
+
                 </div>
-                <!-- end sale -->
-              </section>
-              <!-- ********* END SIDEBAR *********-->
+
+
+                <!-- ********* START FOOTER *********-->
+
+                <!-- ********* END FOOTER *********-->
             </div>
+        </div>
+    </main>
+</div>
 
-            <div class="layout-item">
-            
-            <!-- Место для блока с карточками, который располагается справа от side-bar -->
-
-            </div>
-    
-
-    <!-- ********* START FOOTER *********-->
-   
-    <!-- ********* END FOOTER *********-->
-  </div>
-
-  <script src="index.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="index.js"></script>
 </body>
 
 </html>

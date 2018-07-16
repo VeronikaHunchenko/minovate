@@ -1,26 +1,135 @@
 /*-- ********* HEADER-TOP *********--*/
 
+.header-top {
+    border-bottom: 1px solid #f2f2f2;
+}
 
-
-
-.header-phone{
+.header-phone {
     display: flex;
     align-items: center;
+    padding-right: 15px;
+    border-right: 1px solid #f2f2f2;
+
 }
 
-.header-phone-link{
+.header-phone-link {
     color: #999;
     margin-left: 8px;
-}
-
-.header-phone .icon-phone{
+    font-size: 13px;
 
 }
 
-.header-valuta{
+.header-phone .icon-phone {
+    color: var(--global-color);
+    font-size: 14px;
+}
+
+.header-valuta {
+    padding: 0 15px;
+    border-right: 1px solid #f2f2f2;
+}
+
+.header-valuta > a {
+    color: var(--global-muted-color);
+    text-decoration: none;
+    margin-right: 5px;
 
 }
 
+.header-valuta > a.is-active,
+.header-valuta > a:active,
+.header-valuta > a:focus,
+.header-valuta > a:hover,
+.header-valuta > a:hover,
+.header-valuta > a:focus {
+    color: #e05d6f;
+}
+
+.header-valuta > a:last-child {
+    margin-right: 0;
+}
+
+.header-language {
+    padding: 0 15px;
+
+}
+
+.header-language > span {
+    color: var(--global-muted-color);
+}
+
+.user-navbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.user-navbar > li > a {
+    font-weight: normal;
+    font-size: 13px;
+    color: var(--global-muted-color);
+    text-decoration: none;
+    margin-right: 23px;
+
+}
+
+.user-navbar > li:last-child > a {
+    margin-right: 0;
+}
+
+.user-navbar > li > a:hover {
+    color: #e05d6f;
+}
+
+.mobile-user-navbar {
+
+    display: none;
+}
+
+.mobile-user-navbar ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: relative;
+}
+
+.mobile-user-navbar .mobile-user-navbar-link {
+    color: var(--global-muted-color);
+    font-size: 16px;
+    text-decoration: none;
+    padding: 7px 0;
+    display: flex;
+    border-bottom: 1px solid #f1f1f1;
+    justify-content: center;
+
+}
+
+.mobile-user-navbar a span.icon-user {
+    color: #222;
+    font-size: 16px;
+}
+
+.mobile-user-navbar a:hover {
+    color: #e05d6f;
+}
+
+.mobile-user-navbar ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    background-color: #f8f8f8;
+    box-shadow: 0 0 3px 0 #ccc;
+    min-width: 120px;
+    right: 0;
+}
+
+.mobile-user-navbar ul li:hover > ul {
+    display: block;
+}
 
 /*-- ********* HEADER-BOTTOM *********--*/
 
@@ -28,11 +137,12 @@
     display: block;
 }
 
-.navbar{
+.navbar {
     display: flex;
 }
+
 .navbar-nav,
-.action-navbar-nav{
+.action-navbar-nav {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -53,9 +163,6 @@
 
 }
 
-
-
-
 .navbar-nav > li > a.is-active,
 .navbar-nav > li > a:active,
 .navbar-nav > li > a:focus,
@@ -65,35 +172,22 @@
     color: #e05d6f;
 }
 
-.action-navbar-nav::before{
+.action-navbar-nav::before {
     content: '';
     height: 12px;
     width: 2px;
     background-color: #222;
 }
 
-.action-navbar-nav > li{
+.action-navbar-nav > li {
     padding-left: 18px;
 }
+
 .action-navbar-nav > li > a {
     font-size: 15px;
     color: #222;
     text-decoration: none;
 }
-
-
-
-/*.action-navbar-nav > li:first-child > a > span{*/
-    /*border-left: 2px solid #222;*/
-/*}*/
-
-/*.action-navbar-nav > li > a > span{*/
-    /*padding-left: 18px;*/
-/*}*/
-
-
-
-
 
 /*-- ********* for mobile HEADER-BOTTOM *********--*/
 
@@ -153,7 +247,7 @@
     z-index: 982;
     top: 0;
     right: 0;
-    background-color: #fff;
+    background-color: #f8f8f8;
     overflow-x: hidden;
     transition: 0.3s;
     box-shadow: 0 0 3px 0 #ccc;
@@ -180,13 +274,10 @@
     stroke: #eee;
 }
 
-
-
 .mobile-nav__closebtn:focus svg line,
 .mobile-nav__closebtn:hover svg line {
     stroke: #222;
 }
-
 
 .mobile-nav,
 .mobile-nav__openbtn {
@@ -194,9 +285,6 @@
 }
 
 /*-- ********* finish for mobile HEADER-BOTTOM *********--*/
-
-
-
 
 @media screen and (max-width: 992px) {
     .mobile-nav,
@@ -212,4 +300,34 @@
         display: block;
     }
 
+    .mobile-user-navbar {
+
+        display: block;
+    }
+
+    .user-navbar {
+        display: none;
+    }
+
+    .header-phone {
+        padding-right: 10px;
+    }
+
+    .header-valuta,
+    .header-language {
+        padding: 0 10px;
+    }
+
+}
+
+@media screen and (max-width: 640px) {
+
+    .header-phone {
+        padding-right: 6px;
+    }
+
+    .header-valuta,
+    .header-language {
+        padding: 0 6px;
+    }
 }

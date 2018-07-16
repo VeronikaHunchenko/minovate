@@ -6,18 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="stylesheets/styles.css">
 
-    <!-- **************   FONTS *****************-->
-    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700,800" rel="stylesheet">
-
     <!-- **************   ICONS *****************-->
     <link rel="stylesheet" href="images/icomoon/style.css">
     <link rel="stylesheet" href="images/icomoon2/style.css">
+
+    <!-- **************   FONTS *****************-->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700,800" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700|Raleway:300,400,500,700" rel="stylesheet">
+
     <title>Minovate</title>
 
 <body>
 
 <div class="wrapper">
-
+    <!-- ********* START HEADER *********-->
     <header>
         <div class="header-top">
             <div class="container">
@@ -31,9 +33,9 @@
                         </div>
 
                         <div class="header-valuta">
-                            <span>€</span>
-                            <span>£</span>
-                            <span>$</span>
+                            <a href="#" class="is-active">€</a>
+                            <a href="#">£</a>
+                            <a href="#">$</a>
                         </div>
 
                         <div class="header-language">
@@ -42,13 +44,39 @@
 
 
                     </div>
-                    <div class="layout-item">
 
+                    <div class="layout-item">
+                        <ul class="user-navbar">
+                            <li class="">
+                                <a href="#">My Account</a>
+                            </li>
+                            <li class="navbar-item">
+                                <a href="#">Wishlist</a>
+                            </li>
+                            <li class="navbar-item">
+                                <a href="#">Checkout</a>
+                            </li>
+                            <li class="navbar-item">
+                                <a href="#">Login</a>
+                            </li>
+                        </ul>
+
+                        <div class="mobile-user-navbar">
+                            <ul>
+                                <li><a href="#"> <span class="icon-user"></span></a>
+                                    <ul>
+                                        <li><a class="mobile-user-navbar-link" href="#">My Account</a></li>
+                                        <li><a class="mobile-user-navbar-link" href="#">Wishlist</a></li>
+                                        <li><a class="mobile-user-navbar-link" href="#">Checkout</a></li>
+                                        <li><a class="mobile-user-navbar-link" href="#">Login</a></li>
+                                    </ul>
+
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
-
-
         </div>
 
         <div class="header-bottom">
@@ -71,16 +99,16 @@
                                     <a href="#" class="navbar-link">Woman</a>
                                 </li>
                                 <li class="navbar-item">
-                                    <a href="#" class="navbar-link">Man</a>
+                                    <a href="product-list.html" class="navbar-link">Man</a>
                                 </li>
                                 <li class="navbar-item">
                                     <a href="#" class="navbar-link">Kids</a>
                                 </li>
                                 <li class="navbar-item">
-                                    <a href="#" class="navbar-link">Hot</a>
+                                    <a href="checkout.html" class="navbar-link">Hot</a>
                                 </li>
                                 <li class="navbar-item">
-                                    <a href="#" class="navbar-link">Pages</a>
+                                    <a href="checkout.html" class="navbar-link">Pages</a>
                                 </li>
                             </ul>
 
@@ -119,7 +147,7 @@
                                     <a href="#" class="">Woman</a>
                                 </li>
                                 <li class="">
-                                    <a href="#" class="">Man</a>
+                                    <a href="product-list.html" class="">Man</a>
                                 </li>
                                 <li class="">
                                     <a href="#" class="link">Kids</a>
@@ -128,7 +156,7 @@
                                     <a href="#" class="">Hot</a>
                                 </li>
                                 <li class="">
-                                    <a href="#" class="">Pages</a>
+                                    <a href="checkout.html" class="">Pages</a>
                                 </li>
                             </ul>
 
@@ -141,7 +169,6 @@
         </div>
     </header>
     <!-- ********* END HEADER *********-->
-
 
     <main class="page-main">
         <section class="hero">

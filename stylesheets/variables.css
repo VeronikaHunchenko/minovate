@@ -3,14 +3,13 @@
   --global-font-size:                              14px;
   --global-line-height:                            20px;
 
-<<<<<<< HEAD
-  --global-color:                                  #999999;
+
+
   --global-muted-color:                            #999;
-=======
+
   --global-color:                                  #666666;
-/*  --global-muted-color:                            #999;*/
-  --global-hover-color::                           #e05d6f;
->>>>>>> 5bf26f373508f986d1611b27d57041b5aa1ff000
+  --global-hover-color:                           #e05d6f;
+
 
   --global-link-color:                             #666666;
   --global-link-hover-color:                       #e05d6f;
