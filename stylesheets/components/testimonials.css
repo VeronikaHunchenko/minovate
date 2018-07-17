@@ -128,7 +128,8 @@ textarea {
 .rating-section h6 {
   padding-bottom: 0;
   margin-bottom: 0;
-  margin-right: 12px;
+  margin-right: 12px; 
+  color: #222222;
 }
 .rating>.icon-star {
   margin-bottom: 2px;

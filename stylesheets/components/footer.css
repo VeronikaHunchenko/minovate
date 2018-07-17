@@ -50,7 +50,7 @@
 	align-items: center;
 	min-width: 280px;
 }
-.card__advantages h1, h6{
+.card__advantages > h1, h6{
 		text-transform: uppercase;
 		color: white;
 		margin: 0;
