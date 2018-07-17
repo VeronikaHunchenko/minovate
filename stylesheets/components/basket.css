@@ -1,0 +1,54 @@
+.basket {
+    background-color: white;
+}
+
+.basket-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 26px 0;
+}
+
+.quantity {
+    display: flex;
+    height: 33px;
+}
+
+.quantity button span,
+.quantity button,
+.quantity input {
+    color: #222;
+    text-align: center;
+}
+
+.quantity .button-subtract {
+    width: 30px;
+    min-height: 30px;
+    border-right: none;
+    border-left: 2px solid #e5e5e5;
+    border-top: 2px solid #e5e5e5;
+    border-bottom: 2px solid #e5e5e5;
+    background-color: transparent;
+    padding: 0;
+}
+
+.quantity .button-add {
+    width: 30px;
+    min-height: 30px;
+    border-left: none;
+    border-right: 2px solid #e5e5e5;
+    border-top: 2px solid #e5e5e5;
+    border-bottom: 2px solid #e5e5e5;
+    background-color: transparent;
+    padding: 0;
+}
+
+.quantity input {
+    -webkit-appearance: none;
+    border: 2px solid #e5e5e5;
+    text-align: center;
+    min-height: 32px;
+    width: 60px;
+    font-size: 16px;
+    font-weight: 300;
+}
