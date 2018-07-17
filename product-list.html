@@ -2,261 +2,467 @@
 <html lang="en" dir="ltr">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="stylesheets/styles.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="stylesheets/styles.css">
 
-  <!-- **************   ICONS *****************-->
-  <link rel="stylesheet" href="images/icomoon/style.css">
+    <!-- **************   ICONS *****************-->
+    <link rel="stylesheet" href="images/icomoon/style.css">
+    <link rel="stylesheet" href="images/icomoon2/style.css">
 
-  <!-- **************  FONTS  *****************-->
-  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700|Raleway:300,400,500,700" rel="stylesheet">
+    <!-- **************   FONTS *****************-->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700,800" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700|Raleway:300,400,500,700" rel="stylesheet">
 
-  <title>Product list</title>
+    <title>Product list</title>
 </head>
 
 <body>
 
-  <div class="wrapper">
+<div class="wrapper">
     <!-- ********* START HEADER *********-->
+    <header class="border-bottom">
+        <div class="header-top">
+            <div class="container">
+                <div class="layout-header-top">
+                    <div class="layout-item">
+                        <div class="header-phone">
 
+                            <span class="icon-phone"></span>
+                            <a class="header-phone-link" href="tel:+38-0421-964-335-12">+421 964 335 12</a>
+
+                        </div>
+
+                        <div class="header-valuta">
+                            <a href="#" class="is-active">€</a>
+                            <a href="#">£</a>
+                            <a href="#">$</a>
+                        </div>
+
+                        <div class="header-language">
+                            <span>English</span>
+                        </div>
+
+
+                    </div>
+
+                    <div class="layout-item">
+                        <ul class="user-navbar">
+                            <li class="">
+                                <a href="#">My Account</a>
+                            </li>
+                            <li class="navbar-item">
+                                <a href="#">Wishlist</a>
+                            </li>
+                            <li class="navbar-item">
+                                <a href="#">Checkout</a>
+                            </li>
+                            <li class="navbar-item">
+                                <a href="#">Login</a>
+                            </li>
+                        </ul>
+
+                        <div class="mobile-user-navbar">
+                            <ul>
+                                <li><a href="#"> <span class="icon-user"></span></a>
+                                    <ul>
+                                        <li><a class="mobile-user-navbar-link" href="#">My Account</a></li>
+                                        <li><a class="mobile-user-navbar-link" href="#">Wishlist</a></li>
+                                        <li><a class="mobile-user-navbar-link" href="#">Checkout</a></li>
+                                        <li><a class="mobile-user-navbar-link" href="#">Login</a></li>
+                                    </ul>
+
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-bottom">
+            <div class="container">
+                <div class="layout-header-bottom">
+                    <div class="layout-item">
+                        <a href="#" class="logo">
+                            <img src="images/logo.png" alt="logo">
+                        </a>
+                    </div>
+
+
+                    <div class="layout-item">
+                        <nav class="navbar">
+                            <ul class="navbar-nav">
+                                <li class="navbar-item">
+                                    <a href="index.html" class="navbar-link ">Home</a>
+                                </li>
+                                <li class="navbar-item">
+                                    <a href="#" class="navbar-link">Woman</a>
+                                </li>
+                                <li class="navbar-item">
+                                    <a href="product-list.html" class="navbar-link is-active">Man</a>
+                                </li>
+                                <li class="navbar-item">
+                                    <a href="#" class="navbar-link">Kids</a>
+                                </li>
+                                <li class="navbar-item">
+                                    <a href="#" class="navbar-link">Hot</a>
+                                </li>
+                                <li class="navbar-item">
+                                    <a href="checkout.html" class="navbar-link">Pages</a>
+                                </li>
+                            </ul>
+
+                            <ul class="action-navbar-nav">
+                                <li><a href=""><span class="icon-search"></span></a></li>
+                                <li><a href=""><span class="icon-shopping-cart"></span></a></li>
+                            </ul>
+                        </nav>
+
+                        <div class="mob_menu_bg"></div>
+
+                        <a class="mobile-nav__openbtn" id="mobile-nav__openbtn" onclick="openNav()" href="#">
+                            <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"
+                                 version="1.1">
+                                <rect y="9" width="20" height="2" fill="#85D2FF"></rect>
+                                <rect y="3" width="20" height="2" fill="#85D2FF"></rect>
+                                <rect y="15" width="20" height="2" fill="#85D2FF"></rect>
+                            </svg>
+                        </a>
+
+                        <nav class="mobile-nav" id="mobile-nav">
+
+                            <a class="mobile-nav__closebtn" type="button" href="javascript:void(0)"
+                               onclick="closeNav()">
+                                <svg width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
+                                    <line stroke-width="2" x1="1" y1="1" x2="13" y2="13"></line>
+                                    <line stroke-width="2" x1="13" y1="1" x2="1" y2="13"></line>
+                                </svg>
+                            </a>
+
+
+                            <ul class="mobile-navbar-nav">
+                                <li class="">
+                                    <a href="index.html" class="">Home</a>
+                                </li>
+                                <li class="">
+                                    <a href="#" class="">Woman</a>
+                                </li>
+                                <li class="">
+                                    <a href="product-list.html" class="is-active">Man</a>
+                                </li>
+                                <li class="">
+                                    <a href="#" class="link">Kids</a>
+                                </li>
+                                <li class="">
+                                    <a href="#" class="">Hot</a>
+                                </li>
+                                <li class="">
+                                    <a href="checkout.html" class="">Pages</a>
+                                </li>
+                            </ul>
+
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </header>
     <!-- ********* END HEADER *********-->
 
-  <main class="page-main">
+    <!-- ********* START BREADCRUMBS *********-->
+    <div class="breadcrumbs">
+        <div class="container">
+            <div class="layout layout-breadcrumbs">
+                <div class="layout-item">
+                    <h2>Man</h2>
+                    <p class="breadcrumbs-title">Le Manifique</p>
+                </div>
+
+                <div class="layout-item">
+                    <ul class="breadcrumbs-list">
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">Shop</a>
+                        </li>
+
+                        <li class="is-active">
+                            <span>Man</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- ********* END BREADCRUMBS *********-->
+
+    <main class="page-main">
         <div class="container">
 
-          <div class="layuot layout-page-main">
-            <div class="layout-item">
-              <!-- ********* START SIDEBAR *********-->
-              <section class="sidebar">
-                <!-- start availability -->
-                <div class="availability">
+            <div class="layout layout-page-main">
+                
+                    <div class="layout-item">
+                        <!-- ********* START SIDEBAR *********-->
+                        <section class="sidebar">
+                            <!-- start availability -->
+                            <div class="availability">
 
-                  <div class="grid grid-availability">
-                    <div class="grid-item">
-                      <div class="sale-header">
-                        <h6>Availability</h6>
-                      </div>
-                      <form action="" class="form-checkbox">
-                        <fieldset class="fieldset-checkbox">
-                          <p class="checkbox-overlay">
-                            <input type="checkbox" name="vehicle1" value="Bike">
-                            <span>Not Available</span>
-                          </p>
-                          <p class="checkbox-overlay">
-                            <input type="checkbox" name="vehicle2" value="not-available">
-                            <span>Coming to stock</span>
-                          </p>
-                          <p class="checkbox-overlay">
-                            <input type="checkbox" name="vehicle2" value="in-stock">
-                            <span>In Stock</span>
-                          </p>
+                                <div class="grid grid-availability">
+                                    <div class="grid-item">
+                                        <div class="sale-header">
+                                            <h6>Availability</h6>
+                                        </div>
+                                        <form action="" class="form-checkbox">
+                                            <fieldset class="fieldset-checkbox">
+                                                <p class="checkbox-overlay">
+                                                    <input type="checkbox" name="vehicle1" value="Bike">
+                                                    <span>Not Available</span>
+                                                </p>
+                                                <p class="checkbox-overlay">
+                                                    <input type="checkbox" name="vehicle2" value="not-available">
+                                                    <span>Coming to stock</span>
+                                                </p>
+                                                <p class="checkbox-overlay">
+                                                    <input type="checkbox" name="vehicle2" value="in-stock">
+                                                    <span>In Stock</span>
+                                                </p>
 
-                        </fieldset>
-                      </form>
+                                            </fieldset>
+                                        </form>
+                                    </div>
+                                    <div class="grid-item">
+                                        <div class="sale-header">
+                                            <h6>Price</h6>
+                                        </div>
+                                        <div class="range-input">
+                                            <div class="range">
+                                                Range:
+                                                <div class="lowDollarAmount"></div>
+                                                -
+                                                <div class="highDollarAmount"></div>
+                                                <!-- <p>Range: $36 - $89</p> -->
+                                            </div>
+                                            <input id="slider" type="range" multiple value="20,50"/>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end availability -->
+                            <!-- start sale -->
+                            <div class="sale">
+                                <div class="sale-header">
+                                    <h6>best sellers</h6>
+                                </div>
+                                <div class="grid grid-sale">
+                                    <div class="grid-item">
+                                        <div class="card-sale">
+                                            <div class="img-sale-overlay">
+                                                <img src="images/sale1.png" alt="">
+                                            </div>
+                                            <div class="description-overlay">
+                                                <h5>Black T-shirt</h5>
+                                                <h2 class="price-color">$12.99</h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="grid-item">
+                                        <div class="card-sale">
+                                            <div class="img-sale-overlay">
+                                                <img src="images/sale1.png" alt="">
+                                            </div>
+                                            <div class="description-overlay">
+                                                <h5>Black T-shirt</h5>
+                                                <h2 class="price-color">$12.99</h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="grid-item">
+                                        <div class="card-sale">
+                                            <div class="img-sale-overlay">
+                                                <img src="images/sale1.png" alt="">
+                                            </div>
+                                            <div class="description-overlay">
+                                                <h5>Black T-shirt</h5>
+                                                <h2 class="price-color">$12.99</h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end sale -->
+                        </section>
+                        <!-- ********* END SIDEBAR *********-->
                     </div>
-                     <div class="grid-item">
-                      <div class="sale-header">
-                        <h6>Price</h6>
-                      </div>
-                      <div class="range-input">
-                        <div class="range">
-                          Range:
-                          <div class="lowDollarAmount"></div> -
-                          <div class="highDollarAmount"></div>
-                          <!-- <p>Range: $36 - $89</p> -->
-                        </div>
-                        <input id="slider" type="range" multiple value="20,50" />
-                      </div>
 
-
-                    </div>
-                  </div>
-                </div>
-                <!-- end availability -->
-                <!-- start sale -->
-                <div class="sale">
-                  <div class="sale-header">
-                    <h6>best sellers</h6>
-                  </div>
-                  <div class="grid grid-sale">
-                    <div class="grid-item">
-                      <div class="card-sale">
-                        <div class="img-sale-overlay">
-                          <img src="images/sale1.png" alt="">
-                        </div>
-                        <div class="description-overlay">
-                          <h5>Black T-shirt</h5>
-                          <h2 class="price-color">$12.99</h2>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="grid-item">
-                      <div class="card-sale">
-                        <div class="img-sale-overlay">
-                          <img src="images/sale1.png" alt="">
-                        </div>
-                        <div class="description-overlay">
-                          <h5>Black T-shirt</h5>
-                          <h2 class="price-color">$12.99</h2>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="grid-item">
-                      <div class="card-sale">
-                        <div class="img-sale-overlay">
-                          <img src="images/sale1.png" alt="">
-                        </div>
-                        <div class="description-overlay">
-                          <h5>Black T-shirt</h5>
-                          <h2 class="price-color">$12.99</h2>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- end sale -->
-              </section>
-              <!-- ********* END SIDEBAR *********-->
-            </div>
-
-            <div class="layout-item">
-            <div class="over-review">
-              <div class="card-review">
-                <div class="card-review-foto">
-                  <div class="foto-backround"></div>
-                  <div class="foto-overlay"></div>
-                  <div class="foto-foreground">
-                    <img src="images/preview1.png" alt="">
-                  </div>
-                  <div class="card-review-icon icon-magnifier"></div>
-                  <div class="card-review-icon icon-more">...</div>
-                </div>
-                <div class="card-review-desk">
-                  <h3 class="card-reveiw-header">Black T-Shirt</h3>
-                  <div class="card-cost">
-                    <span class="card-reveiw-price">$12.99</span>
-                    <button class="card-reveiw-add">              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 477.175 477.175" style="enable-background:new 0 0 477.175 477.175;" xml:space="preserve" width="10px" height="10px">
+                    <div class="layout-item">
+                        <div class="over-review">
+                            <div class="card-review">
+                                <div class="card-review-foto">
+                                    <div class="foto-backround"></div>
+                                    <div class="foto-overlay"></div>
+                                    <div class="foto-foreground">
+                                        <img src="images/preview1.png" alt="">
+                                    </div>
+                                    <div class="card-review-icon icon-magnifier"></div>
+                                    <div class="card-review-icon icon-more">...</div>
+                                </div>
+                                <div class="card-review-desk">
+                                    <h3 class="card-reveiw-header">Black T-Shirt</h3>
+                                    <div class="card-cost">
+                                        <span class="card-reveiw-price">$12.99</span>
+                                        <button class="card-reveiw-add">
+                                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 477.175 477.175" style="enable-background:new 0 0 477.175 477.175;" xml:space="preserve" width="10px" height="10px">
                                     <path d="M145.188,238.575l215.5-215.5c5.3-5.3,5.3-13.8,0-19.1s-13.8-5.3-19.1,0l-225.1,225.1c-5.3,5.3-5.3,13.8,0,19.1l225.1,225   c2.6,2.6,6.1,4,9.5,4s6.9-1.3,9.5-4c5.3-5.3,5.3-13.8,0-19.1L145.188,238.575z" fill="#cccccc"/>
-                                  </svg> Add to cart</button>
-                  </div>
-                </div>
-                <div class="card-review-mark mark-red">Hot</div>
-              </div>
+                                  </svg>
+                                            Add to cart
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="card-review-mark mark-red">Hot</div>
+                            </div>
 
-              <div class="card-review">
-                <div class="card-review-foto">
-                  <div class="foto-backround"></div>
-                  <div class="foto-overlay"></div>
-                  <div class="foto-foreground">
-                    <img src="images/2.png" alt="">
-                  </div>
-                  <div class="card-review-icon icon-magnifier"></div>
-                  <div class="card-review-icon icon-more">...</div>
-                </div>
-                <div class="card-review-desk">
-                  <h3 class="card-reveiw-header">Red T-Shirt</h3>
-                  <div class="card-cost">
-                    <span class="card-reveiw-price">$10.99</span>
-                    <button class="card-reveiw-add">              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 477.175 477.175" style="enable-background:new 0 0 477.175 477.175;" xml:space="preserve" width="10px" height="10px">
+                            <div class="card-review">
+                                <div class="card-review-foto">
+                                    <div class="foto-backround"></div>
+                                    <div class="foto-overlay"></div>
+                                    <div class="foto-foreground">
+                                        <img src="images/2.png" alt="">
+                                    </div>
+                                    <div class="card-review-icon icon-magnifier"></div>
+                                    <div class="card-review-icon icon-more">...</div>
+                                </div>
+                                <div class="card-review-desk">
+                                    <h3 class="card-reveiw-header">Red T-Shirt</h3>
+                                    <div class="card-cost">
+                                        <span class="card-reveiw-price">$10.99</span>
+                                        <button class="card-reveiw-add">
+                                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 477.175 477.175" style="enable-background:new 0 0 477.175 477.175;" xml:space="preserve" width="10px" height="10px">
                                     <path d="M145.188,238.575l215.5-215.5c5.3-5.3,5.3-13.8,0-19.1s-13.8-5.3-19.1,0l-225.1,225.1c-5.3,5.3-5.3,13.8,0,19.1l225.1,225   c2.6,2.6,6.1,4,9.5,4s6.9-1.3,9.5-4c5.3-5.3,5.3-13.8,0-19.1L145.188,238.575z" fill="#cccccc"/>
-                                  </svg> Add to cart</button>
-                  </div>
-                </div>
-              </div>
+                                  </svg>
+                                            Add to cart
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
 
-              <div class="card-review">
-                <div class="card-review-foto">
-                  <div class="foto-backround"></div>
-                  <div class="foto-overlay"></div>
-                  <div class="foto-foreground">
-                    <img src="images/3.png" alt="">
-                  </div>
-                  <div class="card-review-icon icon-magnifier"></div>
-                  <div class="card-review-icon icon-more">...</div>
-                </div>
-                <div class="card-review-desk">
-                  <h3 class="card-reveiw-header">White T-Shirt</h3>
-                  <div class="card-cost">
-                    <span class="card-reveiw-price">$14.99</span>
-                    <button class="card-reveiw-add">              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 477.175 477.175" style="enable-background:new 0 0 477.175 477.175;" xml:space="preserve" width="10px" height="10px">
+                            <div class="card-review">
+                                <div class="card-review-foto">
+                                    <div class="foto-backround"></div>
+                                    <div class="foto-overlay"></div>
+                                    <div class="foto-foreground">
+                                        <img src="images/3.png" alt="">
+                                    </div>
+                                    <div class="card-review-icon icon-magnifier"></div>
+                                    <div class="card-review-icon icon-more">...</div>
+                                </div>
+                                <div class="card-review-desk">
+                                    <h3 class="card-reveiw-header">White T-Shirt</h3>
+                                    <div class="card-cost">
+                                        <span class="card-reveiw-price">$14.99</span>
+                                        <button class="card-reveiw-add">
+                                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 477.175 477.175" style="enable-background:new 0 0 477.175 477.175;" xml:space="preserve" width="10px" height="10px">
                                     <path d="M145.188,238.575l215.5-215.5c5.3-5.3,5.3-13.8,0-19.1s-13.8-5.3-19.1,0l-225.1,225.1c-5.3,5.3-5.3,13.8,0,19.1l225.1,225   c2.6,2.6,6.1,4,9.5,4s6.9-1.3,9.5-4c5.3-5.3,5.3-13.8,0-19.1L145.188,238.575z" fill="#cccccc"/>
-                                  </svg> Add to cart</button>
-                  </div>
-                </div>
-                <div class="card-review-mark mark-green">NEW</div>
-              </div>
+                                  </svg>
+                                            Add to cart
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="card-review-mark mark-green">NEW</div>
+                            </div>
 
-              <div class="card-review">
-                <div class="card-review-foto">
-                  <div class="foto-backround"></div>
-                  <div class="foto-overlay"></div>
-                  <div class="foto-foreground">
-                    <img src="images/4.png" alt="">
-                  </div>
-                  <div class="card-review-icon icon-magnifier"></div>
-                  <div class="card-review-icon icon-more">...</div>
-                </div>
-                <div class="card-review-desk">
-                  <h3 class="card-reveiw-header">Red T-Shirt</h3>
-                  <div class="card-cost">
-                    <span class="card-reveiw-price">$12.99</span>
-                    <button class="card-reveiw-add">              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 477.175 477.175" style="enable-background:new 0 0 477.175 477.175;" xml:space="preserve" width="10px" height="10px">
+                            <div class="card-review">
+                                <div class="card-review-foto">
+                                    <div class="foto-backround"></div>
+                                    <div class="foto-overlay"></div>
+                                    <div class="foto-foreground">
+                                        <img src="images/4.png" alt="">
+                                    </div>
+                                    <div class="card-review-icon icon-magnifier"></div>
+                                    <div class="card-review-icon icon-more">...</div>
+                                </div>
+                                <div class="card-review-desk">
+                                    <h3 class="card-reveiw-header">Red T-Shirt</h3>
+                                    <div class="card-cost">
+                                        <span class="card-reveiw-price">$12.99</span>
+                                        <button class="card-reveiw-add">
+                                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 477.175 477.175" style="enable-background:new 0 0 477.175 477.175;" xml:space="preserve" width="10px" height="10px">
                                     <path d="M145.188,238.575l215.5-215.5c5.3-5.3,5.3-13.8,0-19.1s-13.8-5.3-19.1,0l-225.1,225.1c-5.3,5.3-5.3,13.8,0,19.1l225.1,225   c2.6,2.6,6.1,4,9.5,4s6.9-1.3,9.5-4c5.3-5.3,5.3-13.8,0-19.1L145.188,238.575z" fill="#cccccc"/>
-                                  </svg> Add to cart</button>
-                  </div>
-                </div>
-              </div>
+                                  </svg>
+                                            Add to cart
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
 
-              <div class="card-review">
-                <div class="card-review-foto">
-                  <div class="foto-backround"></div>
-                  <div class="foto-overlay"></div>
-                  <div class="foto-foreground">
-                    <img src="images/5.png" alt="">
-                  </div>
-                  <div class="card-review-icon icon-magnifier"></div>
-                  <div class="card-review-icon icon-more">...</div>
-                </div>
-                <div class="card-review-desk">
-                  <h3 class="card-reveiw-header">Blue T-Shirt</h3>
-                  <div class="card-cost">
-                    <span class="card-reveiw-price">$12.99</span>
-                    <button class="card-reveiw-add">              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 477.175 477.175" style="enable-background:new 0 0 477.175 477.175;" xml:space="preserve" width="10px" height="10px">
+                            <div class="card-review">
+                                <div class="card-review-foto">
+                                    <div class="foto-backround"></div>
+                                    <div class="foto-overlay"></div>
+                                    <div class="foto-foreground">
+                                        <img src="images/5.png" alt="">
+                                    </div>
+                                    <div class="card-review-icon icon-magnifier"></div>
+                                    <div class="card-review-icon icon-more">...</div>
+                                </div>
+                                <div class="card-review-desk">
+                                    <h3 class="card-reveiw-header">Blue T-Shirt</h3>
+                                    <div class="card-cost">
+                                        <span class="card-reveiw-price">$12.99</span>
+                                        <button class="card-reveiw-add">
+                                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 477.175 477.175" style="enable-background:new 0 0 477.175 477.175;" xml:space="preserve" width="10px" height="10px">
                                     <path d="M145.188,238.575l215.5-215.5c5.3-5.3,5.3-13.8,0-19.1s-13.8-5.3-19.1,0l-225.1,225.1c-5.3,5.3-5.3,13.8,0,19.1l225.1,225   c2.6,2.6,6.1,4,9.5,4s6.9-1.3,9.5-4c5.3-5.3,5.3-13.8,0-19.1L145.188,238.575z" fill="#cccccc"/>
-                                  </svg> Add to cart</button>
-                  </div>
-                </div>
-                <div class="card-review-mark mark-blue">Sale</div>
-              </div>
+                                  </svg>
+                                            Add to cart
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="card-review-mark mark-blue">Sale</div>
+                            </div>
 
-              <div class="card-review">
-                <div class="card-review-foto">
-                  <div class="foto-backround"></div>
-                  <div class="foto-overlay"></div>
-                  <div class="foto-foreground">
-                    <img src="images/6.png" alt="">
-                  </div>
-                  <div class="card-review-icon icon-magnifier"></div>
-                  <div class="card-review-icon icon-more">...</div>
-                </div>
-                <div class="card-review-desk">
-                  <h3 class="card-reveiw-header">Black T-Shirt</h3>
-                  <div class="card-cost">
-                    <span class="card-reveiw-price">$12.99</span>
-                    <button class="card-reveiw-add">
-                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 477.175 477.175" style="enable-background:new 0 0 477.175 477.175;" xml:space="preserve" width="10px" height="10px">
+                            <div class="card-review">
+                                <div class="card-review-foto">
+                                    <div class="foto-backround"></div>
+                                    <div class="foto-overlay"></div>
+                                    <div class="foto-foreground">
+                                        <img src="images/6.png" alt="">
+                                    </div>
+                                    <div class="card-review-icon icon-magnifier"></div>
+                                    <div class="card-review-icon icon-more">...</div>
+                                </div>
+                                <div class="card-review-desk">
+                                    <h3 class="card-reveiw-header">Black T-Shirt</h3>
+                                    <div class="card-cost">
+                                        <span class="card-reveiw-price">$12.99</span>
+                                        <button class="card-reveiw-add">
+                                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 477.175 477.175" style="enable-background:new 0 0 477.175 477.175;" xml:space="preserve" width="10px" height="10px">
                       <path d="M145.188,238.575l215.5-215.5c5.3-5.3,5.3-13.8,0-19.1s-13.8-5.3-19.1,0l-225.1,225.1c-5.3,5.3-5.3,13.8,0,19.1l225.1,225   c2.6,2.6,6.1,4,9.5,4s6.9-1.3,9.5-4c5.3-5.3,5.3-13.8,0-19.1L145.188,238.575z" fill="#cccccc"/>
-                    </svg> Add to cart</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            </div>
-    <!-- ********* START FOOTER *********-->
+                    </svg>
+                                            Add to cart
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-    <!-- ********* END FOOTER *********-->
-  </div>
-  <script src="index.js"></script>
+                    <!-- ********* START FOOTER *********-->
+
+                    <!-- ********* END FOOTER *********-->
+            </div>
+        </div>
+    </main>
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/app.js"></script>
+<script src="index.js"></script>
 </body>
+
 </html>
