@@ -301,6 +301,9 @@ ol>li>ol,
 ol>li>ul {
   margin: 0;
 }
+li{
+    list-style-type: none;
+}
 
 dt {
   font-weight: bold;
