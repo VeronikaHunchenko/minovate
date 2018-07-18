@@ -251,3 +251,33 @@ select {
 .blue {
 	color: #428bca;
 }
+
+@media screen  and (max-width: 322px) {
+	.preview-price-overlay {
+		flex-direction: column;
+	}
+	.preview-status {
+		margin-top: 10px;
+	}
+	.product-overlay {
+		flex-direction: column;
+	}
+	.share-socials-overlay {
+		flex-direction: column;
+	}
+	.layout-preview {
+		flex-direction: column;
+	}
+	.layout-preview > .layout-item {
+		padding-top: 60px;
+	}
+	.layout-preview > .layout-item:first-child {
+		width: 100%;
+		background-color: #fff;
+	}
+	.layout-preview > .layout-item:last-child {
+		width: 100%;
+		background-color: #fff;
+		padding: 0 15px 0 15px;
+	}
+}
