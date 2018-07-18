@@ -39,6 +39,23 @@
   --button-transparent-border-focus: #222222;
   --button-transparent-border-active: #222222;
 
+
+
+  --button-quantity-background: transparrent;
+  --button-quantity-border-color: #e5e5e5;
+  --button-quantity-border-width: 1px;
+  --button-quantity-color: var(--global-secondary-background);
+
+  --button-quantity-border-radius: 2px;
+
+  --button-inverse-background: #fff;
+  --button-inverse-border: none;
+  --button-inverse-color: #222;
+  --button-inverse-border-radius: 2px;
+  --button-inverse-text-transform: uppercase;
+  --button-inverse-font-weight: bold;
+  --button-inverse-padding: 12px 15px;
+
 }
 
 
@@ -118,3 +135,20 @@ input[type="submit"],
 .button-large {
   padding: 6px 25px;
 }
+
+.button-inverse{
+
+  border-radius: var(--button-inverse-border-radius);
+  color: var(--button-inverse-color);
+  background-color: var(--button-inverse-background);
+  cursor: pointer;
+  text-transform: var(--button-inverse-text-transform);
+  font-weight: var(--button-inverse-font-weight);
+  padding: var(--button-inverse-padding);
+}
+
+.button-inverse:hover{
+  color: var(--button-color);
+  background-color: var(--button-background);
+}
+
