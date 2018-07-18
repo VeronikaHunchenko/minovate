@@ -21,3 +21,12 @@
 	padding-bottom: 15px;
 	color: #b2b2b2;
 }
+.sale-header h6 {
+	color: #222222;
+}
+
+@media screen  and (max-width: 922px) {
+	input[type="range"].multirange {
+		width: 150px;
+	}
+}

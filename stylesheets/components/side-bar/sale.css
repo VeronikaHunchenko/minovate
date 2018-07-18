@@ -14,6 +14,7 @@
 	padding-top: 20px;
 	padding-left: 20px;
 	margin-bottom: 0;
+	color: #222222;
 }
 .card-sale {
 	display: flex;
@@ -37,4 +38,14 @@
 }
 .img-sale-overlay {
 	padding-right: 20px;
+}
+@media screen  and (max-width: 1034px) {
+	.gty-section {
+		flex-direction: column;
+		align-items: center;
+	}
+	.gty-overlay {
+		padding: 0 0 20px 0;
+		margin-right: 0;
+	}
 }

@@ -413,6 +413,7 @@ textarea {
 }
 del {
   color: #999999;
+  font-size: 18px;
 }
 .status-select {
   color: #5cb85c;

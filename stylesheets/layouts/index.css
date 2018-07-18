@@ -17,3 +17,30 @@
 	min-width: 260px;
 	margin-right: 30px; 
 }
+@media screen  and (max-width: 922px) {
+	.layout-page-main > .layout-item:first-child {
+		min-width: 200px;
+		margin-right: 30px; 
+	}
+	.layout-page-main {
+		margin-left: 30px;
+		margin-right: 30px;
+
+	}
+}
+@media screen  and (max-width: 922px) {
+	.layout-page-main {
+		flex-direction: column;
+	}
+	.layout-page-main > .layout-item:first-child {
+		min-width: 200px;
+		margin-right: 0; 
+	}
+}
+@media screen  and (max-width: 321px) {
+	.layout-page-main {
+		margin-left: 10px;
+		margin-right: 10px;
+
+	}
+}

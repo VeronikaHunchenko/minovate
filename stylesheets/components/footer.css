@@ -10,14 +10,12 @@
 	padding-bottom: 20px;
 }
 .layout-advantages {
-    justify-content: center;
 	align-items: center;
 	display: flex;
 }
 
 .layout-advantages .layout-item {
 	position: relative;
-	width: calc(100%/3);
 }
 
 .separator {
@@ -28,7 +26,7 @@
     margin: 20px;
     background-color: #ffffff;
     top: 14%;
-    left: -31px;
+    left: -40px;
 }
 
 .card__advantages-icon {
@@ -57,7 +55,7 @@
 }
 
 .card__advantages-content {
-	min-width: 230px;
+	min-width: 300px;
 }
 
 .card__advantages h2, .card__advantages h6{

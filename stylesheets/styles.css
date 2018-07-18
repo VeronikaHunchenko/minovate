@@ -5,7 +5,3 @@
 @import 'components/index.css';
 
 @import 'themes/theme.css';
-
-.inverse > * {
-	color: #fff;
-}
