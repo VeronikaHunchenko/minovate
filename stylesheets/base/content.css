@@ -26,9 +26,9 @@
   --base-margin-vertical:                          var(--global-margin);
 
   --base-heading-font-family:                      var(--global-font-family);
-  --base-heading-font-weight:                      normal;
-  --base-heading-color:                            inherit;
-  --base-heading-text-transform:                   none;
+  --base-heading-font-weight:                      bold;
+  --base-heading-color:                            #222;
+  --base-heading-text-transform:                   uppercase;
   --base-heading-margin-top:                       var(--global-margin);
   --base-h1-font-size:                             30px;
   --base-h1-line-height:                           1.2;

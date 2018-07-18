@@ -201,50 +201,146 @@
     <!-- ********* END BREADCRUMBS *********-->
 
     <main class="page-main">
-        <div class="container">
-            <h6>Your Shopping Cart</h6>
-            <div class="basket">
-                <div class="basket-header">
-                    <div class="basket-title"></div>
-                    <div class="basket-title"></div>
-                    <div class="basket-title"></div>
-                    <div class="basket-title"></div>
-                    <div class="basket-title"></div>
 
-                </div>
-                <div class="basket-content">
-                    <div class="basket-item">
-                        <div class="image">
-                            <img src="images/basket.png" alt="">
-                        </div>
-                        <div class="description">
-                            <span>Black T-Shirt</span>
-                            <span>Color: black, Size: L</span>
-                        </div>
-                        <div class="sku">SK611269159</div>
-                        <div class="quantity">
-                            <button class="button-subtract " type="button" name="button">
-                                <span class="icon-subtract"></span>
-                            </button>
+        <section class="section-basket">
+            <div class="container">
+                <h6>Your Shopping Cart</h6>
+                <div class="basket">
+                    <div class="basket-header">
+                        <div></div>
+                        <div><h6 class="basket-title">Description</h6></div>
+                        <div><h6 class="basket-title">SKU</h6></div>
+                        <div><h6 class="basket-title">quantity</h6></div>
+                        <div><h6 class="basket-title">unit price</h6></div>
+                        <div><h6 class="basket-title">total</h6></div>
+                        <div></div>
+                    </div>
 
-                            <input type="text" name="name" value="1">
-                            <button class="button-add" type="button" name="quantity">
-                                <span class="icon-add"></span>
-                            </button>
+                    <div class="basket-content">
+                        <div class="basket-item">
+                            <div class="image">
+                                <img src="images/basket.png" alt="">
+                            </div>
+                            <div class="description">
+                                <span class="description-big">Black T-Shirt</span>
+                                <span>Color: black, Size: L</span>
+                            </div>
+                            <div class="sku">SK611269159</div>
+                            <div class="quantity">
+                                <button class="btn-subtract " type="button" name="button">
+                                    <span class="icon-subtract"></span>
+                                </button>
 
+                                <input type="text" name="name" value="1">
+                                <button class="btn-add" type="button" name="quantity">
+                                    <span class="icon-add"></span>
+                                </button>
+
+                            </div>
+                            <div class="unit-price">$12.99</div>
+                            <div class="total-price">$12.99</div>
+                            <div>
+                                <button class="btn-close" type="button" name="button">
+                                    <span class="icon-x-altx-alt"></span>
+                                </button>
+                            </div>
                         </div>
-                        <div class="unit-price">$12.99</div>
-                        <div class="total-price">$12.99</div>
-                        <button class="close-btn" type="button" name="button">
-                            <img src="plus.svg" alt="">
-                        </button>
+                        <div class="basket-item">
+                            <div class="image">
+                                <img src="images/basket.png" alt="">
+                            </div>
+                            <div class="description">
+                                <span class="description-big">Black T-Shirt</span>
+                                <span>Color: black, Size: L</span>
+                            </div>
+                            <div class="sku">SK611269159</div>
+                            <div class="quantity">
+                                <button class="btn-subtract " type="button" name="button">
+                                    <span class="icon-subtract"></span>
+                                </button>
+
+                                <input type="text" name="name" value="1">
+                                <button class="btn-add" type="button" name="quantity">
+                                    <span class="icon-add"></span>
+                                </button>
+
+                            </div>
+                            <div class="unit-price">$12.99</div>
+                            <div class="total-price">$12.99</div>
+                            <div>
+                                <button class="btn-close" type="button" name="button">
+                                    <span class="icon-x-altx-alt"></span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="basket-item">
+                            <div class="image">
+                                <img src="images/basket.png" alt="">
+                            </div>
+                            <div class="description">
+                                <span class="description-big">Black T-Shirt</span>
+                                <span>Color: black, Size: L</span>
+                            </div>
+                            <div class="sku">SK611269159</div>
+                            <div class="quantity">
+                                <button class="btn-subtract " type="button" name="button">
+                                    <span class="icon-subtract"></span>
+                                </button>
+
+                                <input type="text" name="name" value="1">
+                                <button class="btn-add" type="button" name="quantity">
+                                    <span class="icon-add"></span>
+                                </button>
+
+                            </div>
+                            <div class="unit-price">$12.99</div>
+                            <div class="total-price">$12.99</div>
+                            <div>
+                                <button class="btn-close" type="button" name="button">
+                                    <span class="icon-x-altx-alt"></span>
+                                </button>
+                            </div>
+                        </div>
 
                     </div>
 
-                </div>
-            </div>
-        </div>
+                    <div class="basket-footer">
 
+                        <div>
+                            <h6>subtotal</h6>
+                            <span class="price">$38.97</span>
+                        </div>
+
+                        <div>
+                            <h6>shipping cost</h6>
+                            <span class="price">$4.00</span>
+                        </div>
+
+
+                        <div class="">
+                            <h5>total</h5>
+                            <span class="price">$42.97</span>
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+                <div class="basket-actions">
+                    <div class="layout layout-basket-actions">
+                        <div class="layout-item">
+                            <a href="" class="button button-inverse">Continue shopping</a>
+                        </div>
+                        <div class="layout-item">
+                            <a href="" class="button button-inverse">Proceed to payment</a>
+                            <a href="" class="button button-inverse">update cart</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
     </main>
 
 

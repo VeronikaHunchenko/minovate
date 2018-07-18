@@ -10,7 +10,7 @@
   --form-focus-background:                         #cccccc;
   --form-focus-color:                              var(--global-color);
 
-  --form-disabled-background:                      /*#e7e6e6;*/;
+
   --form-disabled-color:                           var(--global-muted-color);
 
   --form-placeholder-color:                        var(--global-muted-color);
