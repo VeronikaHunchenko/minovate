@@ -158,7 +158,6 @@
 .subscription {
 	display: flex;
 	align-items: center;
-	color: #ccc;
 }
 
 .subscription h5 {
@@ -166,6 +165,8 @@
 	font-weight: bold;
 	margin: 0;
 	margin-right: 30px;
+	color: #ccc;
+
 }
 
 input[type="email"].subscription-input {

@@ -1,3 +1,10 @@
+.container-basket{
+    max-width: 980px;
+    margin: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
 .section-basket {
     margin-bottom: 55px;
 }
