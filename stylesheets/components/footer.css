@@ -16,7 +16,19 @@
 }
 
 .layout-advantages .layout-item {
+	position: relative;
 	width: calc(100%/3);
+}
+
+.separator {
+	position: absolute;
+    content: '';
+    height: 30px;
+    width: 1px;
+    margin: 20px;
+    background-color: #ffffff;
+    top: 14%;
+    left: -31px;
 }
 
 .card__advantages-icon {
@@ -25,6 +37,7 @@
 	border-radius: 50%;
 	border: 2px solid white;
 	position: relative;
+	flex-shrink: 0;
 }
 
 .card__advantages-icon [class^=icon-] {
@@ -251,6 +264,10 @@ button.subscription-button:hover {
 
 	.layout-pre__footer-top .layout-item:first-child {
 		padding-right: 5%;
+	}
+
+	.separator {
+		display: none;
 	}
 } 
 
