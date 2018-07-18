@@ -6,6 +6,14 @@
   margin-right: auto;
 }
 
+.container-small {
+  max-width: 960px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .container .container {
   padding-left: 0;
   padding-right: 0
