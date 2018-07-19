@@ -1,0 +1,35 @@
+.nav-content {
+    padding-left: 0;
+    background-color: var(--global-background);
+}
+
+.nav-content-list {
+    font-size: 14px;
+}
+
+.nav-content-list > li {
+    border-bottom: 2px solid #f8f8f8;
+}
+
+.nav-content-list a {
+    padding: 9px 0;
+    display: block;
+    margin-left: 12px;
+}
+
+.nav-content-list li > ul {
+    margin-left: 18px;
+}
+
+.nav-content-list li a span {
+    content: '';
+    font-size: 10px;
+    padding-right: 9px;
+    font-weight: bold;
+
+}
+
+.nav-content-list a.is-active {
+    color: var(--global-link-hover-color);
+}
+
