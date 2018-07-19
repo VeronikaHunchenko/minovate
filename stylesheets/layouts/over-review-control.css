@@ -1,0 +1,8 @@
+.over-review-control {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
